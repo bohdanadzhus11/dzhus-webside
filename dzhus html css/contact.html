@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthSpecialist - Contact</title>
+    <link rel="stylesheet" href="style.css">
+       
+</head>
+
+<body>
+    <div class="nav-wrapper">
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <span class="logo-dot"></span>
+                    <span class="logo-dot"></span>
+                    <span class="logo-dot"></span>
+                    <span class="logo-dot"></span>
+                </div>
+                <span><a href="index.html" class="logo-link"><span class="logo-text-health">Health</span><span
+                            class="logo-text-specialist">Specialist</span></a></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li style="position: relative;">
+                    <a onclick="toggleDoctorsMenu()">DOCTORS</a>
+                    <div class="doctors-dropdown" id="doctorsDropdown">
+                        <div class="doctor-item">Phillis K Vance MD</div>
+                        <div class="doctor-item">Stanley K Hudson MD</div>
+                        <div class="doctor-item">Kevin D Malone MD</div>
+                        <div class="doctor-item">Angela S Martin MD</div>
+                    </div>
+                </li>
+                <li><a href="contact.html" class="active-page-link">CONTACT</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn-login">LOG IN</button>
+                <button class="btn-signup">SIGN UP</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section class="contact-hero">
+            <h1>Зв'яжіться з Нами</h1>
+            <p>Наша команда готова відповісти на всі ваші запитання та допомогти вам із записом на прийом. Заповніть
+                форму або скористайтеся прямими контактами нижче.</p>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-info-card">
+                <h3>Контактна Інформація</h3>
+                <div class="info-item">
+                    <span class="info-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </span>
+                    <a href="tel:+14041234567" style="color: white; text-decoration: none;">(404) 123 - 4567</a>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </span>
+                    info@healthspecialist.com
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </span>
+                    123 Medical Plaza, Suite 400, Anytown, CA 90210
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Надішліть Нам Повідомлення</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">ПОВНЕ ІМ'Я *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">EMAIL *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">ТЕЛЕФОН (НЕОБОВ'ЯЗКОВО)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">ВАШЕ ПОВІДОМЛЕННЯ *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">ВІДПРАВИТИ ЗАПИТ</button>
+                </form>
+            </div>
+        </section>
+
+        <section style="margin: 50px 0 80px; text-align: center;">
+            <h2 style="font-size: 28px; color: #2c3e50; margin-bottom: 20px;">Наше Розташування</h2>
+            <div style="border: 1px solid #e0e0e0; border-radius: 10px; overflow: hidden; height: 400px; width: 100%;">
+                <iframe
+                    src="https://maps.google.com/maps?q=30+Peachtree+St+NW,+Atlanta,+GA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <p style="margin-top: 15px; font-size: 14px; color: #7f8c8d;">
+                Головний офіс: **123 Medical Plaza, Suite 400, Anytown, CA 90210**
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <span class="footer-logo-dot"></span>
+                            <span class="footer-logo-dot"></span>
+                            <span class="footer-logo-dot"></span>
+                            <span class="footer-logo-dot"></span>
+                        </div>
+                        <span><a href="index.html" class="logo-link"><span class="logo-text-health">Health</span><span
+                                    class="logo-text-specialist">Specialist</span></a></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-title">SERVICES</div>
+                    <ul class="footer-list">
+                        <li><a href="#">Family Medicine</a></li>
+                        <li><a href="#">International Medicine</a></li>
+                        <li><a href="#">Cardiology</a></li>
+                        <li><a href="#">Physical Therapy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-title">DOCTORS</div>
+                    <ul class="footer-list">
+                        <li><a href="#">Phillis K Vance MD</a></li>
+                        <li><a href="#">Stanley K Hud</a></li>
+                        <li><a href="#">Kevin D Malone MD</a></li>
+                        <li><a href="#">Angela S Martin MD</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-title">CONTACT</div>
+                    <a href="tel:+14041234567" class="footer-phone">
+                        <span class="phone-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </span>
+                        (404)123 - 4567
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">1440 X 1040</div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDoctorsMenu() {
+            document.getElementById('doctorsDropdown').classList.toggle('active');
+        }
+
+        document.addEventListener('click', function (e) {
+            const dropdown = document.getElementById('doctorsDropdown');
+            if (!dropdown.contains(e.target) && !e.target.closest('.nav-menu')) {
+                dropdown.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
